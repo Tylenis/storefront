@@ -49,7 +49,7 @@
             <label for="inputZip" [ngClass]="{'text-success': zipinput.valid}">Zip</label>
             <input type="text" class="form-control" id="inputZip" [(ngModel)]="zip" #zipinput="ngModel" name="zip" required pattern="\d+" required>
             <div class="invalid-input" *ngIf="zipinput.invalid && zipinput.touched">
-                Please provide zip code.
+                Please provide zip code. Only numbers are allowed.
             </div>
         </div>
     </div>
